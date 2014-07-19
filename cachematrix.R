@@ -41,7 +41,6 @@ makeCacheMatrix <- function(mtrx = matrix()) {
 cacheSolve <- function(x, ...) {
   inverse <- x$getInverse() ## Return a matrix that is the inverse of the matrix in 'x'
   if(!is.null(inverse)) { # check if already computed
-    print("returning the inverse from the cache")
     inverse 
   }
   
